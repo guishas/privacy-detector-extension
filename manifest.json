@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Privac",
+  "version": "1.0",
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Privac - Privacy Detector Extension",
+    "default_popup": "main.html"
+  },
+  "description": "Checks cookies, third-party connections and local storage to estimate how much privacy your browser has taken away from you.",
+  "permissions": [
+    "cookies",
+    "tabs",
+    "storage"
+  ],
+  "icons": {
+    
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
