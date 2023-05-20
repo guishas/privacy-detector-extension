@@ -8,7 +8,87 @@
 </head>
 
 <body>
+
+  <div>
+    <h1 id="report"></h1>
+  </div>
   
+  <div>
+    <div style="margin-left:10px;">
+      <h1 id="website-security-status">Website Risk</h1>
+      <h2 id="website-score"></h2>
+      <progress id="score-progress-bar" value="0" max="400"></progress>
+      <br></br>
+    </div>
+    
+    <h2 id="cookies-security-status" style="margin-left:10px;">
+      Cookies:
+    </h2>
+    <div style="margin-left:10px;" id="cookies-div">
+      <div id="header-title-cookies" style="margin-left:10px;"></div>
+      <h3 id="number-cookies" style="margin-left:10px;"></h3>
+      <div style="margin-left:10px;">
+        <h3>Cookie risk:</h3>
+        <progress value="0" max="100" id="cookies-status"></progress>  
+      </div>
+      <h3 style="margin-left:10px;">All cookies:</h3>
+      <ul id="cookie-list" style="margin-left:10px;"></ul>
+      <br></br>
+    </div>
+
+    <div style="margin-left:10px;"> 
+      <h2 id="local-storage-security-status">
+        Local Storage:
+      </h2>
+      <div id="header-title-local-storage" style="margin-left:20px;"></div>
+      <h3 id="size-local-storage" style="margin-left:20px;"></h3>
+      <div style="margin-left:20px;">
+        <h3>Local storage risk:</h3>
+        <progress value="0" max="50" id="local-storage-status"></progress>  
+      </div>
+      <h3 style="margin-left:20px;">All data in local storage:</h3>
+      <ul id="local-storage-list" style="margin-left:20px;"></ul>
+      <br></br>
+    </div>
+
+    <div style="margin-left:10px;">
+      <h2 id="session-storage-security-status">
+        Session Storage:
+      </h2>
+      <div id="header-title-session-storage" style="margin-left:20px;"></div>
+      <h3 id="size-session-storage" style="margin-left:20px;"></h3>
+      <div style="margin-left:20px;">
+        <h3>Session storage risk:</h3>
+        <progress value="0" max="20" id="session-storage-status"></progress>  
+      </div>
+      <h3 style="margin-left:20px;">All data in session storage:</h3>
+      <ul id="session-storage-list" style="margin-left:20px;"></ul>
+      <br></br>
+    </div>
+
+    <div style="margin-left:10px;">
+      <h2 id="fingertprint-security-status">
+        Fingerprinting:
+      </h2>
+      <h3 id="fingerprint-exists" style="margin-left:20px;"></h3>
+      <div style="margin-left:20px;">
+        <h3>Fingerprint risk:</h3>
+        <progress value="0" max="100" id="fingerprint-status"></progress>  
+      </div>
+      <span id="fingerprint-id" style="margin-left:20px;"></span>
+      <br></br>
+    </div>
+    
+    <div style="margin-left:10px;">
+      <h2>
+        Third Party Domains:
+      </h2>
+      <h3 id="size-third-party" style="margin-left:20px;"></h3>
+      <h3 style="margin-left:20px;">All third party domains:</h3>
+      <ul id="third-party-list" style="margin-left:20px;"></ul>
+    </div>
+  </div>
+
 </body>
 
 </html>
