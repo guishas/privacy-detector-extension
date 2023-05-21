@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Privac",
+  "name": "PriVAC",
   "version": "1.0",
   "browser_action": {
     "browser_style": true,
@@ -10,8 +10,11 @@
   "description": "Checks cookies, third-party connections and local storage to estimate how much privacy your browser has taken away from you.",
   "permissions": [
     "cookies",
+    "<all_urls>",
     "tabs",
-    "storage"
+    "storage",
+    "http://*/*",
+    "https://*/*"
   ],
   "icons": {
     
@@ -19,7 +22,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["main.js"]
+      "js": ["inject.js"]
     }
   ]
 }
