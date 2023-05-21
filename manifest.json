@@ -17,7 +17,7 @@
     "https://*/*"
   ],
   "icons": {
-    
+    "32": "privacy.png"
   },
   "content_scripts": [
     {
